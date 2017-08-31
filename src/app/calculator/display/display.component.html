@@ -1,0 +1,11 @@
+<div class="display-wrapper">
+<button (click)="add()" type="button" name="add">add</button>
+<button (click)="substract()" type="button" name="substract">substract</button>
+<button (click)="multiply()" type="button" name="multiply">multiply</button>
+<button (click)="divide()" type="button" name="divide">divide</button>
+  <p>
+    {{sum}}
+  </p>
+  <input [(ngModel)]="first" type="text" (keyup)="onKey()">
+  <input [(ngModel)]="second" type="text" (keyup)="onKey()">
+</div>
